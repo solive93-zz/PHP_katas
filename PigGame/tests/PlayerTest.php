@@ -3,7 +3,7 @@ use PHPUnit\Framework\TestCase;
 use App\Player;
 
 final class PlayerTest extends TestCase
-{   
+{    
     public $player;
     
     public function SetUp() :void
@@ -33,12 +33,12 @@ final class PlayerTest extends TestCase
         $this->assertEquals($this->player->getRoundScore(), $result);
     }
 
-    public function test_player_loses_roundScore_and_turn_when_rolls_a_1()
+    public function test_player_loses_roundScore()
     {
         $this->player->roll(6);
         $this->player->roll(1);
 
-        $this->assertEquals($this->player->getRoundScore(), 0);
+        $this->assertEquals(0, $this->player->getRoundScore());
     }
 
     public function test_player_roundScores_adds_to_globalScore_when_holds()

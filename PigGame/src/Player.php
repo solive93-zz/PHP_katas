@@ -3,7 +3,7 @@ namespace App;
 
 class Player
 {
-    private $globalScore;
+    private $globalScore; 
     private $roundScore;
 
     public function __construct()
