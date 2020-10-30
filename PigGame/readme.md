@@ -1,0 +1,8 @@
+# PIG GAME KATA
+
+### The Rules:
+* The game has 2 playes, playing in rounds.
+* In each turn a player rolls a dice as many times has he wishes. Each result get added to his round "round score"
+* But, if the player rolls a 1, all his/her "round score" gets lost and loses the turn.
+* The player can choose to "hold", wich means that is "round score" gets added to his/her "global score". After that, it's the other player's turn.
+* The first player to reach 100 points on "global score" wins the game.
